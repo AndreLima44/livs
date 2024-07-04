@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Lívia!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="lights"></div>
+    <div class="container">
+        <img id="topImage" src="home.png" alt="Imagem de Topo">
+        <div id="inputContainer">
+            <p>Coloca a data de hoje!</p>
+            <input type="text" id="nameInput" placeholder="Digite seu nome">
+            <input type="date" id="dateInput">
+            <button id="submitButton">Enviar</button>
+            <p id="hintMessage" class="hidden">O burrona! vou te dar uma dica: o nome é 'Livia' e a data é '04/07/2024'</p>
+        </div>
+        <div id="messageContainer" class="hidden">
+            <p id="message"></p>
+            <img id="dancingImage" src="imagedancing.png" class="hidden" alt="Imagem Dançando">
+            <div id="birthdayContent" class="hidden">
+                <div class="image-container" id="leftImages"></div>
+                <img id="birthdayImage" src="cupcake.png" alt="Bolo de Aniversário">
+                <div class="image-container" id="rightImages"></div>
+            </div>
+            <p id="additionalMessage" class="hidden"></p>
+        </div>
+        <div id="responseContainer" class="hidden">
+            <p id="responseMessage">Você gostou da surpresa?</p>
+            <button id="yesButton">SIM! EU AMEI!</button>
+            <button class="button" onmouseover="moveButton(this)">NÃO, EU NÃO PEDI FESTA!</button>
+        </div>
+        <div id="finalMessageContainer" class="hidden">
+            <p id="finalMessage">Que bom, eu te amo. Agora aproveite o vídeo.</p>
+            <video id="surpriseVideo" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>
+    <audio id="birthdaySong" src="freddy_fazbear_remix.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
